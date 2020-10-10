@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Logan Farci</title>
+    <meta name="description" content="I am a graduate with a Bachelor’s degree in Computer Sciences. Passionate about technology, I have grown to love this field thanks to education, a first professional experience, and personal interest. I have experience in programming, database management, agile methodologies, and analysis. Now actively looking for a new challenge as a full stack developer." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" />
+    <style>:root {
+  /* Colors */
+  --primaryColor: #212529;
+  --secondaryColor: #95a5a6;
+  --accentColor: #f1c40f;
+  --linkColor: #2ecc71;
+  --mutedColor: #f4f6f6;
+
+  /* Typography */
+  --ratio: 1.25;
+  --scale0: 1rem;
+  --scale1: calc(var(--scale0) * var(--ratio));
+  --scale2: calc(var(--scale1) * var(--ratio));
+  --scale3: calc(var(--scale2) * var(--ratio));
+  --scale4: calc(var(--scale3) * var(--ratio));
+  --scale5: calc(var(--scale4) * var(--ratio));
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  color: var(--primaryColor);
+  display: grid;
+  font: 1em/1.5 Lato, sans-serif;
+  gap: 2em;
+  grid-template-columns:
+    [full-start]
+    1fr
+    [main-start side-start]
+    minmax(min-content, 12em)
+    [side-end content-start]
+    minmax(min-content, 36em)
+    [main-end content-end]
+    1fr
+    [full-end];
+  grid-template-rows: auto [content] 0;
+  margin-bottom: 4em;
+}
+
+body::before {
+  content: '';
+  grid-column: full;
+  grid-row: content;
+}
+
+ol,
+ul {
+  padding-left: 1em;
+}
+
+li + li {
+  margin-top: 0.2em;
+}
+
+li::marker {
+  color: var(--mutedColor);
+}
+
+a {
+  color: var(--linkColor);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:focus,
+a:hover {
+  color: var(--accentColor);
+}
+
+h1,
+h2,
+h3,
+h5 {
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--scale5);
+}
+
+h2 {
+  color: var(--secondaryColor);
+  font-size: var(--scale4);
+}
+
+h3 {
+  color: var(--accentColor);
+  font-size: var(--scale3);
+  grid-column: side;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: var(--scale2);
+}
+
+h5 {
+  font-size: var(--scale1);
+}
+
+h6 {
+  font-size: var(--scale0);
+}
+
+p:not(:first-child) {
+  margin-top: 1em;
+}
+
+p:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+blockquote {
+  border-left: 0.2em solid var(--mutedColor);
+  padding-left: 1em;
+}
+
+cite {
+  color: var(--secondaryColor);
+  font-style: inherit;
+}
+
+cite::before {
+  content: '— ';
+}
+
+header {
+  background: var(--mutedColor);
+  display: inherit;
+  gap: inherit;
+  grid-column: full;
+  grid-template-columns: inherit;
+  padding: 4em 0;
+  row-gap: 0;
+}
+
+header > *,
+section {
+  grid-column: main;
+}
+
+.stack {
+  display: grid;
+  gap: 1.5em;
+}
+
+.grid-list {
+  display: grid;
+  gap: 1em;
+}
+
+.spaced-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.spaced-list:first-child::before {
+  border-bottom: 1px solid var(--mutedColor);
+  content: '';
+  flex-grow: 1;
+  margin: 0 1em;
+  order: 1;
+}
+
+.spaced-list > :nth-child(2) {
+  order: 2;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.tag-list > li {
+  background: var(--mutedColor);
+  margin: 0 0.2em 0.2em 0;
+  padding: 0.2em 0.6em;
+}
+
+@media (min-width: 48em) {
+  h3 {
+    text-align: right;
+    margin-bottom: inherit;
+  }
+
+  header > *,
+  section {
+    grid-column: content;
+  }
+
+  section {
+    display: contents;
+  }
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+</style>
+  </head>
+  <body>
+      <header>
+          <h1>Logan Farci</h1>
+          <h2>Junior Full Stack Developer</h2>
+      </header>
+      <section id="contact">
+        <h3>Contact</h3>
+        <div class="grid-list">
+            <div>
+              <h6>Email</h6>
+              <a href="mailto:logan.farci@outlook.be">logan.farci@outlook.be</a>
+            </div>
+            <div>
+              <h6>Phone</h6>
+              +32 4 99 84 63 01
+            </div>
+        </div>
+      </section>
+        <section id="about">
+          <h3>About</h3>
+          <div>
+            <p>I am a graduate with a Bachelor’s degree in Computer Sciences. Passionate about technology, I have grown to love this field thanks to education, a first professional experience, and personal interest. I have experience in programming, database management, agile methodologies, and analysis. Now actively looking for a new challenge as a full stack developer.</p>
+          </div>
+        </section>
+        <section id="profiles">
+          <h3>Profiles</h3>
+          <div class="grid-list">
+              <div>
+                  <h6>Twitter</h6>
+                    <a href="https://twitter.com/pomodoroFighter">pomodoroFighter</a>
+              </div>
+              <div>
+                  <h6>Github</h6>
+                    <a href="https://github.com/Lofaloa">Lofaloa</a>
+              </div>
+          </div>
+        </section>
+
+      <section id="work">
+        <h3>Work</h3>
+        <div class="stack">
+            <article>
+              <div class="spaced-list">
+                <h4>Avanade</h4>
+                <span>
+                  <time datetime="2020-02-10">Feb 2020</time> –
+                  <time datetime="2020-05-29">May 2020</time>
+                </span>
+              </div>
+              <div class="spaced-list">
+                  <strong>Software Engineer Intern</strong>
+                  <a href="https://www.avanade.com">https://www.avanade.com</a>
+              </div>
+                <p>Avanade is the leading provider of innovative digital and cloud services, business solutions and design-led experiences delivered through the power of people and the Microsoft ecosystem. Our professionals bring bold, fresh thinking combined with technology, business and industry expertise to help fuel transformation and growth for our clients and their customers. Avanade has 30,000 digitally connected people across 24 countries, bringing clients the best thinking through a collaborative culture that honors diversity and reflects the communities in which we operate. Majority owned by Accenture, Avanade was founded in 2000 by Accenture LLP and Microsoft Corporation.</p>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>Designed the Avanade’s Mood Measuring Initiative (A.M.M.I.) project</li>
+                    <li>Developed the solution using .NET, C#, Microsoft Azure, React and TypeScript</li>
+                    <li>Managed the project development using the Scrum framework and Azure DevOps</li>
+                </ul>
+            </article>
+        </div>
+      </section>
+      <section id="education">
+        <h3>Education</h3>
+        <div class="stack">
+            <article>
+              <div class="spaced-list">
+                <h4>Haute École Bruxelles-Brabant, École Supérieure d’Informatique (ESI)</h4>
+                <span>
+                  <time datetime="2017-09-14">Sep 2017</time> –
+                  <time datetime="2020-06-30">Jun 2020</time>
+                </span>
+              </div>
+              <div class="spaced-list">
+                  <strong>Information Management Systems</strong>
+                  <a href="https://www.ou.edu/">https://www.ou.edu/</a>
+              </div>
+                <p>Bachelor</p>
+            </article>
+        </div>
+      </section>
+      <section id="projects">
+        <h3>Projects</h3>
+        <div class="stack">
+            <article>
+              <div class="spaced-list">
+                <h4>Avanade&#x27;s Mood Measuring Initiative</h4>
+                <span>
+                  <time datetime="2020-02-10">Feb 2020</time> –
+                  <time datetime="2019-05-29">May 2019</time>
+                </span>
+              </div>
+              <div class="spaced-list">
+                <span>
+                  <strong>Software Engineer Intern</strong>
+                    at <strong>Avanade</strong>
+                </span>
+              </div>
+                <p>The project objective was to help a scrum software development team by improving the communication between its members. It did so by allowing developers to register their mood daily (in a Niko-Niko calendar fashion). The collected data was then compiled into reports. The resulting data visualization was then presented to the scrum master for her/him to take action upon a negative general mood.</p>
+            </article>
+            <article>
+              <div class="spaced-list">
+                <h4>Awesome PS</h4>
+                <span>
+                  <time datetime="2019-09-14">Sep 2019</time> –
+                  <time datetime="2019-12-05">Dec 2019</time>
+                </span>
+              </div>
+              <div class="spaced-list">
+                <span>
+                  <strong>Student</strong>
+                    at <strong>École Supérieure d’Informatique (ESI)</strong>
+                </span>
+                  <a href="https://github.com/Lofaloa/awesome-ps">https://github.com/Lofaloa/awesome-ps</a>
+              </div>
+                <p>This is a simplistic implementation of the PS Linux command using the C programming language and the API provided by the proc virtual file system. The virtual file system was used to find information about the processes currently running on a system.</p>
+            </article>
+            <article>
+              <div class="spaced-list">
+                <h4>Blokus</h4>
+                <span>
+                  <time datetime="2018-12-01">Dec 2018</time> –
+                  <time datetime="2018-12-30">Dec 2018</time>
+                </span>
+              </div>
+              <div class="spaced-list">
+                <span>
+                  <strong>Student</strong>
+                    at <strong>École Supérieure d’Informatique (ESI)</strong>
+                </span>
+                  <a href="https://github.com/Lofaloa/Blokus">https://github.com/Lofaloa/Blokus</a>
+              </div>
+                <p>I developed this game during the second year (december 2018) of my Bachelor&#x27;s degree in computer sciences. This was an assignment for a course about the fundamentals of Software Development using Java. The course followed a first theoretical course about the Java programming language. During this unit, we have learned: object oriented programming fundamentals, lambdas, generics, and graphical user interface development using JavaFX.</p>
+            </article>
+            <article>
+              <div class="spaced-list">
+                <h4>Tic Tac Toe</h4>
+                <span>
+                  <time datetime="2018-06-01">Jun 2018</time> –
+                  <time datetime="2018-07-01">Jul 2018</time>
+                </span>
+              </div>
+              <div class="spaced-list">
+                <span>
+                  <strong>Student</strong>
+                    at <strong>École Supérieure d’Informatique (ESI)</strong>
+                </span>
+                  <a href="https://logan-farci-tic-tac-toe.netlify.app/">https://logan-farci-tic-tac-toe.netlify.app/</a>
+              </div>
+                <p>I developed this game during the first year of my Bachelor&#x27;s degree in computer sciences. I have done it during my free time. I did it with the objective to teach myself the fundamentals of HTML, CSS, and JavaScript.</p>
+            </article>
+        </div>
+      </section>
+      <section id="awards">
+        <h3>Awards</h3>
+        <div class="stack">
+            <article>
+              <div class="spaced-list">
+                <h4>Certificaat Nederlands als Vreemde Taal (B2)</h4>
+                  <time datetime="2017-07-23">Jul 2017</time>
+              </div>
+              <div class="spaced-list">
+                  <div>
+                    Awarded by <strong>KU Leuven</strong>
+                  </div>
+              </div>
+            </article>
+        </div>
+      </section>
+      <section id="skills">
+        <h3>Skills</h3>
+        <div class="grid-list">
+            <div>
+                <h5>Programming Languages</h5>
+                <ul class="tag-list">
+                    <li>Java</li>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div>
+                <h5>Web Development</h5>
+                <ul class="tag-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>Spring Boot</li>
+                    <li>React</li>
+                </ul>
+            </div>
+            <div>
+                <h5>Persistence</h5>
+                <ul class="tag-list">
+                    <li>PostgreSQL</li>
+                    <li>MySQL</li>
+                    <li>Azure Storage</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            <div>
+                <h5>Platforms</h5>
+                <ul class="tag-list">
+                    <li>Android</li>
+                    <li>Linux</li>
+                    <li>Windows</li>
+                    <li>Microsoft Azure</li>
+                </ul>
+            </div>
+            <div>
+                <h5>Project Management</h5>
+                <ul class="tag-list">
+                    <li>Git</li>
+                    <li>Github</li>
+                    <li>Gitlab</li>
+                    <li>Agile Methodologies</li>
+                    <li>Scrum</li>
+                    <li>Azure DevOps</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+      <section id="languages">
+        <h3>Languages</h3>
+        <div class="grid-list">
+            <div>
+                <h6>French</h6>
+              Native speaker
+            </div>
+            <div>
+                <h6>English</h6>
+              Fluent
+            </div>
+            <div>
+                <h6>Dutch</h6>
+              Conversant
+            </div>
+            <div>
+                <h6>Italian</h6>
+              Conversant
+            </div>
+            <div>
+                <h6>Spanish</h6>
+              Beginner
+            </div>
+            <div>
+                <h6>German</h6>
+              Beginner
+            </div>
+        </div>
+      </section>
+      <section id="interests">
+        <h3>Interests</h3>
+        <div class="grid-list">
+            <div>
+                <h5>Sitcoms</h5>
+                <ul class="tag-list">
+                    <li>The Office</li>
+                    <li>Community</li>
+                    <li>Silicon Valley</li>
+                    <li>Seinfeld</li>
+                </ul>
+            </div>
+            <div>
+                <h5>Cinema</h5>
+                <ul class="tag-list">
+                    <li>Horror</li>
+                    <li>Comedy</li>
+                    <li>Sci-fi</li>
+                </ul>
+            </div>
+            <div>
+                <h5>Cooking</h5>
+                <ul class="tag-list">
+                    <li>Italian cuisine</li>
+                    <li>Pastries</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+  </body>
+</html>

@@ -1,0 +1,244 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Logan Farci",
+    "label": "Junior Full Stack Developer",
+    "image": "https://ibb.co/Z6yP5kd",
+    "email": "logan.farci@outlook.be",
+    "phone": "+32 4 99 84 63 01",
+    "summary": "I am a graduate with a Bachelor’s degree in Computer Sciences. Passionate about technology, I have grown to love this field thanks to education, a first professional experience, and personal interest. I have experience in programming, database management, agile methodologies, and analysis. Now actively looking for a new challenge as a full stack developer.",
+    "location": {
+      "address": "Rue du Tulipier 41",
+      "postalCode": "1190",
+      "city": "Brussels",
+      "countryCode": "BE",
+      "region": "Brussels-Capital Region"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "pomodoroFighter",
+        "url": "https://twitter.com/pomodoroFighter"
+      },
+      {
+        "network": "Github",
+        "username": "Lofaloa",
+        "url": "https://github.com/Lofaloa"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Avanade",
+      "location": "Brussels, Belgium",
+      "description": "Awesome compression company",
+      "position": "Software Engineer Intern",
+      "url": "https://www.avanade.com",
+      "startDate": "2020-02-10",
+      "endDate": "2020-05-29",
+      "summary": "Avanade is the leading provider of innovative digital and cloud services, business solutions and design-led experiences delivered through the power of people and the Microsoft ecosystem. Our professionals bring bold, fresh thinking combined with technology, business and industry expertise to help fuel transformation and growth for our clients and their customers. Avanade has 30,000 digitally connected people across 24 countries, bringing clients the best thinking through a collaborative culture that honors diversity and reflects the communities in which we operate. Majority owned by Accenture, Avanade was founded in 2000 by Accenture LLP and Microsoft Corporation.",
+      "highlights": [
+        "Designed the Avanade’s Mood Measuring Initiative (A.M.M.I.) project",
+        "Developed the solution using .NET, C#, Microsoft Azure, React and TypeScript",
+        "Managed the project development using the Scrum framework and Azure DevOps"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Haute École Bruxelles-Brabant, École Supérieure d’Informatique (ESI)",
+      "url": "https://www.ou.edu/",
+      "area": "Information Management Systems",
+      "studyType": "Bachelor",
+      "startDate": "2017-09-14",
+      "endDate": "2020-06-30",
+      "gpa": "Distinction"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "Junior",
+      "keywords": [
+        "Java",
+        "C",
+        "C++",
+        "C#",
+        "Python"
+      ]
+    },
+    {
+      "name": "Web Development",
+      "level": "Junior",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "Spring Boot",
+        "React"
+      ]
+    },
+    {
+      "name": "Persistence",
+      "level": "Junior",
+      "keywords": [
+        "PostgreSQL",
+        "MySQL",
+        "Azure Storage",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Platforms",
+      "level": "Junior",
+      "keywords": [
+        "Android",
+        "Linux",
+        "Windows",
+        "Microsoft Azure"
+      ]
+    },
+    {
+      "name": "Project Management",
+      "level": "Junior",
+      "keywords": [
+        "Git",
+        "Github",
+        "Gitlab",
+        "Agile Methodologies",
+        "Scrum",
+        "Azure DevOps"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "French",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Dutch",
+      "fluency": "Conversant"
+    },
+    {
+      "language": "Italian",
+      "fluency": "Conversant"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Beginner"
+    },
+    {
+      "language": "German",
+      "fluency": "Beginner"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Sitcoms",
+      "keywords": [
+        "The Office",
+        "Community",
+        "Silicon Valley",
+        "Seinfeld"
+      ]
+    },
+    {
+      "name": "Cinema",
+      "keywords": [
+        "Horror",
+        "Comedy",
+        "Sci-fi"
+      ]
+    },
+    {
+      "name": "Cooking",
+      "keywords": [
+        "Italian cuisine",
+        "Pastries"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Avanade's Mood Measuring Initiative",
+      "description": "The project objective was to help a scrum software development team by improving the communication between its members. It did so by allowing developers to register their mood daily (in a Niko-Niko calendar fashion). The collected data was then compiled into reports. The resulting data visualization was then presented to the scrum master for her/him to take action upon a negative general mood.",
+      "keywords": [
+        "Linux",
+        "C",
+        "POSIX",
+        "Bash"
+      ],
+      "startDate": "2020-02-10",
+      "endDate": "2019-05-29",
+      "roles": [
+        "Software Engineer Intern"
+      ],
+      "entity": "Avanade",
+      "type": "application"
+    },
+    {
+      "name": "Awesome PS",
+      "description": "This is a simplistic implementation of the PS Linux command using the C programming language and the API provided by the proc virtual file system. The virtual file system was used to find information about the processes currently running on a system.",
+      "keywords": [
+        "Linux",
+        "C",
+        "POSIX",
+        "Bash"
+      ],
+      "url": "https://github.com/Lofaloa/awesome-ps",
+      "startDate": "2019-09-14",
+      "endDate": "2019-12-05",
+      "roles": [
+        "Student"
+      ],
+      "entity": "École Supérieure d’Informatique (ESI)",
+      "type": "application"
+    },
+    {
+      "name": "Blokus",
+      "description": "I developed this game during the second year (december 2018) of my Bachelor's degree in computer sciences. This was an assignment for a course about the fundamentals of Software Development using Java. The course followed a first theoretical course about the Java programming language. During this unit, we have learned: object oriented programming fundamentals, lambdas, generics, and graphical user interface development using JavaFX.",
+      "keywords": [
+        "Java"
+      ],
+      "url": "https://github.com/Lofaloa/Blokus",
+      "startDate": "2018-12-01",
+      "endDate": "2018-12-30",
+      "roles": [ "Student" ],
+      "entity": "École Supérieure d’Informatique (ESI)",
+      "type": "application"
+    },
+    {
+      "name": "Tic Tac Toe",
+      "description": "I developed this game during the first year of my Bachelor's degree in computer sciences. I have done it during my free time. I did it with the objective to teach myself the fundamentals of HTML, CSS, and JavaScript.",
+      "keywords": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "url": "https://logan-farci-tic-tac-toe.netlify.app/",
+      "startDate": "2018-06-01",
+      "endDate": "2018-07-01",
+      "roles": [ "Student" ],
+      "entity": "École Supérieure d’Informatique (ESI)",
+      "type": "application"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Certificaat Nederlands als Vreemde Taal (B2)",
+      "awarder": "KU Leuven",
+      "date": "2017-07-23"
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-12-24T15:53:00"
+  }
+}
