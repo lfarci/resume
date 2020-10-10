@@ -3,7 +3,7 @@
   "basics": {
     "name": "Logan Farci",
     "label": "Junior Full Stack Developer",
-    "image": "https://ibb.co/Z6yP5kd",
+    "image": "https://i.ibb.co/St4fYcF/picture-square.jpg",
     "email": "logan.farci@outlook.be",
     "phone": "+32 4 99 84 63 01",
     "summary": "I am a graduate with a Bachelor’s degree in Computer Sciences. Passionate about technology, I have grown to love this field thanks to education, a first professional experience, and personal interest. I have experience in programming, database management, agile methodologies, and analysis. Now actively looking for a new challenge as a full stack developer.",
@@ -47,7 +47,7 @@
   "education": [
     {
       "institution": "Haute École Bruxelles-Brabant, École Supérieure d’Informatique (ESI)",
-      "url": "https://www.ou.edu/",
+      "url": "https://www.he2b.be/campus-esi",
       "area": "Information Management Systems",
       "studyType": "Bachelor",
       "startDate": "2017-09-14",
@@ -237,8 +237,6 @@
     }
   ],
   "meta": {
-    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
-    "version": "v1.0.0",
-    "lastModified": "2017-12-24T15:53:00"
+    "theme": "kendall"
   }
 }
