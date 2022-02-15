@@ -1,0 +1,22 @@
+{
+  "name": "lfarci-resume",
+  "version": "1.0.0",
+  "description": "Logan Farci's JSON resume",
+  "main": "resume.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lfarci/resume.git"
+  },
+  "author": "Logan Farci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lfarci/resume/issues"
+  },
+  "homepage": "https://github.com/lfarci/resume#readme",
+  "devDependencies": {
+    "resume-cli": "^3.0.6"
+  }
+}

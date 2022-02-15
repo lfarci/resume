@@ -1,2 +1,4 @@
 # Resume
 This repository containes the json file defining my resume ([resume.json](resume.json)). I made using the [resume-cli](https://github.com/jsonresume/resume-cli) tool provided by [jsonresume](https://github.com/jsonresume).
+
+https://profilestudio.co/#/import
