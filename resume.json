@@ -59,7 +59,6 @@
           "position": "Analyst Developer",
           "website": "https://smals.be",
           "startDate": "2020-11",
-          "endDate": "",
           "summary": "",
           "highlights": [
               "Support the Belgian Employment Office mainframe migration to the cloud",
@@ -68,19 +67,7 @@
           ]
       }
   ],
-  "volunteer": [
-      {
-          "organization": "",
-          "position": "",
-          "website": "",
-          "startDate": "",
-          "endDate": "",
-          "summary": "",
-          "highlights": [
-              ""
-          ]
-      }
-  ],
+  "volunteer": [],
   "education": [
       {
           "institution": "Haute École Bruxelles-Brabant, École Supérieure d’Informatique (ESI)",
@@ -100,15 +87,7 @@
           "summary": "The CNaVT exams are organized all around the world for (young) adults who want to to prove their language proficiency in Dutch with an internationally recognized certificate. The exams are commissioned by the Dutch Language Union and developed by the Centre for Language and Education."
       }
   ],
-  "publications": [
-      {
-          "name": "",
-          "publisher": "",
-          "releaseDate": "",
-          "website": "",
-          "summary": ""
-      }
-  ],
+  "publications": [],
   "skills": [
       {
           "name": "Frontend",
@@ -251,7 +230,7 @@
           "type": "application",
           "website": "https://www.avanade.com",
           "highlights": [
-              "Designed the Avanade’s Mood Measuring Initiative (A.M.M.I.) project",
+              "Designed the Avanade's Mood Measuring Initiative (A.M.M.I.) project",
               "Developed the solution using .NET, C#, Microsoft Azure, React and TypeScript",
               "Managed the project development using the Scrum framework and Azure DevOps"
           ]
@@ -271,7 +250,7 @@
           "roles": [
               "Student"
           ],
-          "entity": "École Supérieure d’Informatique (ESI)",
+          "entity": "École Supérieure d'Informatique (ESI)",
           "type": "application"
       },
       {
@@ -286,7 +265,7 @@
           "roles": [
               "Student"
           ],
-          "entity": "École Supérieure d’Informatique (ESI)",
+          "entity": "École Supérieure d'Informatique (ESI)",
           "type": "application"
       },
       {
@@ -342,8 +321,6 @@
               "Java",
               "Open API generator"
           ],
-          "startDate": "",
-          "endDate": "",
           "website": "",
           "roles": [],
           "entity": "",
