@@ -1,15 +1,19 @@
 # Resume
 
 This repository contains an ATS-friendly, one-page LaTeX resume. Canonical
-facts live in `data/`, while `resume.tex` and `sections/` contain the
-curated presentation.
+career context lives in `docs/`. Structured records in `data/` support the
+build and must remain consistent with the Markdown source.
+
+The repository hierarchy is: `docs/` (canonical context) → `data/`
+(structured verified facts) → `sections/` (curated wording) → `resume.tex`
+(presentation/layout) → generated PDF (build artifact).
 
 ## Repository layout
 
 - `resume.tex` defines the page, typography, colors, header, and portrait.
 - `sections/` contains the resume content.
-- `data/` contains structured employment, education, certification, and skills records; it may require later reconciliation with the canonical Markdown notes.
-- `docs/` contains the current career and resume source of truth, organized as focused, navigable notes.
+- `docs/` contains the canonical career and resume context, organized as focused, navigable notes.
+- `data/` contains structured employment, education, certification, and skills records selected from verified facts; it may require later reconciliation with `docs/`.
 - `.agents/skills/` contains repository-local Codex workflows for resume analysis, tailoring, writing, formatting, and ATS review.
 - `fonts/` and `images/` contain the embedded visual assets.
 - `scripts/` builds and validates the generated PDF.
