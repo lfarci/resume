@@ -341,11 +341,13 @@ Do not prioritize.
 
 ## Recent GitHub Partner Portal Credentials
 
-In 2026 Logan completed three additional GitHub Partner Portal delivery credentials covering areas including:
+In 2026 Logan completed three additional GitHub Partner Portal delivery credentials:
 
-- GitHub Copilot core skills / application delivery
-- deploying and scaling AI in enterprise scenarios
-- modernizing enterprise CI/CD with GitHub Actions
+- **GitHub Copilot: Core Skills & Application Delivery Credential** — issued July 23, 2026; expires July 23, 2027
+- **GitHub Copilot: Deploying and Scaling AI in the Enterprise Delivery Credential** — issued August 13, 2026; expires August 13, 2027
+- **Modernizing Enterprise CI/CD with GitHub Actions Delivery Credential** — issued August 13, 2026; expires August 13, 2027
+
+The official names and dates above were verified against Logan's public Credly profile.
 
 These are highly aligned with his current profile.
 
