@@ -1,0 +1,3 @@
+.github/workflows/*.lock.yml linguist-generated=true merge=ours
+*.tex text eol=lf
+sections/*.tex text eol=lf

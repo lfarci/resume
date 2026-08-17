@@ -1,0 +1,83 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage[
+  margin=1cm,
+  headheight=0pt,
+  headsep=0pt,
+  footskip=0pt
+]{geometry}
+\usepackage[hidelinks]{hyperref}
+\setmainfont[
+  Path=fonts/,
+  Extension=.ttf,
+  UprightFont=NotoSans-Regular,
+  BoldFont=NotoSans-Bold
+]{NotoSans-Regular}
+\newfontfamily\headingfont[
+  Path=fonts/,
+  Extension=.ttf,
+  UprightFont=Manrope-SemiBold,
+  BoldFont=Manrope-Bold
+]{Manrope-SemiBold}
+\definecolor{ResumeInk}{HTML}{0A1121}
+\definecolor{ResumeAccent}{HTML}{0054D4}
+\definecolor{ResumeAccentSoft}{HTML}{E6F3FF}
+\definecolor{ResumeSlate}{HTML}{414B5D}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{1.5em}
+\renewcommand{\labelitemi}{\textbullet}
+\newcommand{\resumePortrait}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \coordinate (portraitCenter) at ([xshift=-20mm,yshift=-20mm]current page.north east);
+    \fill[ResumeAccentSoft] (portraitCenter) circle[radius=10mm];
+    \begin{scope}
+      \clip (portraitCenter) circle[radius=10mm];
+      \node[inner sep=0pt,yshift=-1mm] at (portraitCenter) {%
+        \includegraphics[width=25mm]{images/avatar.png}%
+      };
+    \end{scope}
+    \draw[ResumeAccent,line width=0.8pt] (portraitCenter) circle[radius=10mm];
+  \end{tikzpicture}%
+}
+\newcommand{\resumeSection}[1]{%
+  \par
+  \leftskip=0pt\relax
+  \addvspace{9.5pt}%
+  \begingroup
+  \setlength{\fboxsep}{0pt}%
+  \colorbox{ResumeAccentSoft}{%
+    \makebox[\linewidth][l]{%
+      \rule[-4pt]{0pt}{19pt}%
+      \hspace{5pt}%
+      {\headingfont\color{ResumeAccent}\fontsize{12.2}{15}\selectfont #1}%
+    }%
+  }%
+  \endgroup
+  \par\vspace{4pt}%
+  \leftskip=5pt\relax
+}
+\newenvironment{resumeItems}{\begin{itemize}\setlength{\leftmargin}{1.4em}\setlength{\topsep}{4pt}\setlength{\partopsep}{0pt}\setlength{\itemsep}{4pt}\setlength{\parsep}{0pt}}{\end{itemize}}
+\begin{document}
+\fontsize{10.7}{14.8}\selectfont
+\color{ResumeInk}
+\raggedright
+\hyphenpenalty=10000
+\input{generated/facts.tex}
+\resumePortrait
+{\headingfont\color{ResumeInk}\fontsize{25}{28}\selectfont Logan Farci\par}
+\vspace{3pt}
+{\headingfont\color{ResumeAccent}\fontsize{11.2}{14.5}\selectfont Cloud \& AI Engineer \textbar\ GitHub Actions, Azure \& GitHub Copilot\par}
+\vspace{4pt}
+{\color{ResumeSlate}\fontsize{9.7}{12.5}\selectfont Belgium \textbar\ \href{mailto:logan.farci@outlook.com}{logan.farci@outlook.com} \textbar\ \href{https://www.linkedin.com/in/lfarci}{linkedin.com/in/lfarci} \textbar\ \href{https://github.com/lfarci}{github.com/lfarci} \textbar\ \href{https://www.loganfarci.com}{www.loganfarci.com}\par}
+\input{sections/summary.tex}
+\input{sections/experience.tex}
+\input{sections/skills.tex}
+\input{sections/languages.tex}
+\input{sections/education.tex}
+\input{sections/certifications.tex}
+\end{document}
