@@ -3,12 +3,8 @@
     "title": "Azure Developer Associate",
     "issuer": "Microsoft",
     "date": "2025-03-28",
-    "image": {
-      "src": "/images/certifications/azure-developer-associate.avif",
-      "alt": "Azure Developer Associate badge",
-      "width": 128,
-      "height": 128
-    },
+    "expires": "2027-03",
+    "status": "Active",
     "url": "https://learn.microsoft.com/api/credentials/share/en-us/avanade-logan-farci/982302979423E055?sharingId=C15D4BAF8E2D5DFD",
     "relevance": "High",
     "order": 0
@@ -17,84 +13,81 @@
     "title": "Azure Fundamentals",
     "issuer": "Microsoft",
     "date": "2022-07-08",
-    "image": {
-      "src": "/images/certifications/azure-fundamentals.avif",
-      "alt": "Azure Fundamentals badge",
-      "width": 128,
-      "height": 128
-    },
-    "url": "https://learn.microsoft.com/api/credentials/share/en-us/avanade-logan-farci/2C1C6B5085309683?sharingId=C15D4BAF8E2D5DFD",
+    "url": "https://www.credly.com/badges/c0de2672-f09a-4ec6-9a18-3287481d8dd7/public_url",
     "relevance": "Medium",
-    "order": 1
+    "order": 7
   },
   {
     "title": "Professional Scrum Developer I",
     "issuer": "Scrum.org",
     "date": "2024-07-22",
-    "image": {
-      "src": "/images/certifications/professional-scrum-developer.avif",
-      "alt": "Professional Scrum Developer I badge",
-      "width": 128,
-      "height": 128
-    },
-    "url": "https://www.credly.com/badges/50d97296-5c28-4dfa-96bf-f0imageSize23b7dccc/public_url",
+    "url": "https://www.credly.com/badges/50d97296-5c28-4dfa-96bf-f06423b7dccc/public_url",
     "relevance": "High",
-    "order": 2
+    "order": 3
   },
   {
     "title": "GitHub Foundations",
     "issuer": "GitHub",
     "date": "2024-04-19",
-    "image": {
-      "src": "/images/certifications/github-foundations.avif",
-      "alt": "GitHub Foundations badge",
-      "width": 128,
-      "height": 128
-    },
-    "url": "https://www.credly.com/badges/3cfa4c4f-c20e-42d8-8514-05a43imageSizecdba0/public_url",
+    "expires": "2027-04-19",
+    "url": "https://www.credly.com/badges/3cfa4c4f-c20e-42d8-8514-05a4364cdba0/public_url",
     "relevance": "Low",
-    "order": 3
+    "order": 8
   },
   {
     "title": "GitHub Actions",
     "issuer": "GitHub",
     "date": "2024-05-31",
-    "image": {
-      "src": "/images/certifications/github-actions.avif",
-      "alt": "Green Software for Practitioners badge",
-      "width": 128,
-      "height": 128
-    },
+    "expires": "2027-05-31",
     "url": "https://www.credly.com/badges/e686950e-c4d2-4055-9e31-a2726743f1ff/public_url",
     "relevance": "High",
-    "order": 4
+    "order": 2
   },
   {
     "title": "GitHub Copilot",
     "issuer": "GitHub",
     "date": "2024-08-07",
-    "image": {
-      "src": "/images/certifications/github-copilot.avif",
-      "alt": "GitHub Copilot badge",
-      "width": 128,
-      "height": 128
-    },
+    "expires": "2027-08-07",
     "url": "https://www.credly.com/badges/c2727308-8752-400a-afb9-b524cd804c67/public_url",
-    "relevance": "Medium",
-    "order": 5
+    "relevance": "High",
+    "order": 1
   },
   {
     "title": "Green Software for Practitioners",
     "issuer": "The Linux Foundation",
     "date": "2023-03-20",
-    "image": {
-      "src": "/images/certifications/green-software.avif",
-      "alt": "GitHub Actions",
-      "width": 128,
-      "height": 128
-    },
     "url": "https://www.credly.com/badges/2c74038b-d0d7-493c-85ab-1cc039545a20/public_url",
     "relevance": "Low",
+    "order": 9
+  },
+  {
+    "title": "GitHub Copilot: Core Skills & Application Delivery Credential",
+    "issuer": "GitHub",
+    "date": "2026-07-23",
+    "expires": "2027-07-23",
+    "status": "Active",
+    "url": "https://www.credly.com/badges/08661234-a97c-45fd-8947-5c9fb0707f66/public_url",
+    "relevance": "High",
+    "order": 4
+  },
+  {
+    "title": "GitHub Copilot: Deploying and Scaling AI in the Enterprise Delivery Credential",
+    "issuer": "GitHub",
+    "date": "2026-08-13",
+    "expires": "2027-08-13",
+    "status": "Active",
+    "url": "https://www.credly.com/badges/e16e130d-51b9-4e49-bfde-dec416b2ddf8/public_url",
+    "relevance": "High",
     "order": 5
+  },
+  {
+    "title": "Modernizing Enterprise CI/CD with GitHub Actions Delivery Credential",
+    "issuer": "GitHub",
+    "date": "2026-08-13",
+    "expires": "2027-08-13",
+    "status": "Active",
+    "url": "https://www.credly.com/badges/569d38e8-6019-41c6-8787-6592644f9a88/public_url",
+    "relevance": "High",
+    "order": 6
   }
 ]

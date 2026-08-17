@@ -1,91 +1,116 @@
 [
   {
-    "name": "Consultant, Full-Stack Developer",
+    "title": "Consultant",
+    "role": "DevOps Engineer",
+    "name": "Consultant | DevOps Engineer",
     "start": "2025-12-01",
     "type": "Full-Time",
     "company": {
       "name": "Avanade",
       "website": "https://www.avanade.com",
-      "location": "Merelbeke, Flanders, Belgium",
-      "logo": {
-        "src": "/images/experience/avanade.avif",
-        "alt": "Avanade Logo",
-        "width": 128,
-        "height": 128
-      }
+      "location": "Merelbeke, Flanders, Belgium"
     },
-    "description": "A global leader in digital innovation and cloud services, created by Accenture and Microsoft to help organizations accelerate their digital transformation.\n\n- Led development of enterprise-grade solutions using Azure, .NET, and the Microsoft ecosystem for global clients.  \n- Architected and delivered scalable cloud applications using Azure, Infrastructure as Code, and clean architectural patterns.  \n- Improved delivery velocity by expanding GitHub Copilot use through custom agents and repository custom instructions, using pull-request throughput and size trends to guide adoption.  \n- Championed code quality by applying clean code principles, resulting in maintainable, testable software.  \n- Mentored junior developers and interns across a variety of client and internal projects, with three interns progressing to hires.  \n- Collaborated with clients to turn business requirements into secure, high-performance solutions.  \n- Promoted agile practices as a hands-on Scrum practitioner focused on continuous improvement and team effectiveness."
+    "list": [
+      "Contributed to a configuration-driven Terraform and GitHub Actions platform supporting approximately 20 active Azure environments, capable of deploying an ARO environment in approximately one hour once prerequisites are available.",
+      "Helped evolve the platform from Bicep to Terraform, contributing reusable resource modules, deployment orchestration, release management, and automated documentation.",
+      "Contributed to secure deployment automation for private-network Azure workloads using self-hosted runners, managed identities, Azure RBAC, protected GitHub environments, and IaC security checks.",
+      "Mentored four interns in the 2026 internal engineering cohort as Scrum Master, Product Owner-type contributor, and technical mentor."
+    ],
+    "leadership": [
+      {
+        "cohort": "2026 Avanade internship cohort",
+        "interns": 4,
+        "responsibilities": ["Scrum Master", "Product Owner-type contributor", "Technical Mentor"]
+      }
+    ]
   },
   {
-    "name": "Senior Analyst, Full-Stack Developer",
+    "title": "Senior Analyst",
+    "role": "Full-Stack Developer",
+    "name": "Senior Analyst | Full-Stack Developer",
     "start": "2022-06-01",
     "end": "2025-12-01",
     "type": "Full-Time",
     "company": {
       "name": "Avanade",
       "website": "https://www.avanade.com",
-      "location": "Merelbeke, Flanders, Belgium",
-      "logo": {
-        "src": "/images/experience/avanade.avif",
-        "alt": "Avanade Logo",
-        "width": 128,
-        "height": 128
-      }
+      "location": "Merelbeke, Flanders, Belgium"
     },
-    "description": "A global leader in digital innovation and cloud services, created by Accenture and Microsoft to help organizations accelerate their digital transformation.\n\n- Led development of enterprise-grade solutions using Azure, .NET, and the Microsoft ecosystem for global clients.  \n- Architected and delivered scalable cloud applications using Azure, Infrastructure as Code, and clean architectural patterns.  \n- Championed code quality by applying clean code principles, resulting in maintainable, testable software.  \n- Mentored junior developers and interns across a variety of client and internal projects.  \n- Collaborated with clients to turn business requirements into secure, high-performance solutions.  \n- Promoted agile practices as a hands-on Scrum practitioner focused on continuous improvement and team effectiveness."
+    "list": [
+      "From approximately December 2023, contributed to the Azure/DevOps platform engagement while still Senior Analyst; the engagement continued after the December 2025 promotion.",
+      "Delivered complex .NET business-rule changes for a Belgian energy environment, translating regulatory requirements and large operational datasets into tested production software.",
+      "Optimized SQL Server processing and built Python-based sanity-check reporting to identify missing messages and data inconsistencies while minimizing load on an already heavily used system.",
+      "Built a proof of concept to evaluate migration of manually managed business rules into a rule-engine system, including a custom conversion mechanism and management presentations.",
+      "Mentored three interns in the 2025 internal engineering cohort, with two confirmed hires."
+    ],
+    "engagements": [
+      {
+        "name": "Azure / DevOps platform engagement",
+        "start": "2023-12",
+        "end": "2025-12",
+        "datePrecision": "Approximate",
+        "role": "DevOps / Platform Engineer",
+        "continuedAfterPromotion": true
+      }
+    ],
+    "leadership": [
+      {
+        "cohort": "2025 Avanade internship cohort",
+        "interns": 3,
+        "confirmedHires": 2,
+        "responsibilities": ["Scrum Master", "Technical Mentor"]
+      }
+    ]
   },
   {
+    "title": "Analyst Developer",
     "name": "Analyst Developer",
-    "start": "2020-11-01",
-    "end": "2022-06-01",
+    "start": "2020",
+    "end": "2022",
     "type": "Full-Time",
     "company": {
       "name": "Smals",
       "website": "https://smals.be/",
-      "location": "Brussels, Brussels-Capital Region, Belgium",
-      "logo": {
-        "src": "/images/experience/smals.avif",
-        "alt": "Smals Logo",
-        "width": 128,
-        "height": 128
-      }
+      "location": "Brussels, Brussels-Capital Region, Belgium"
     },
-    "description": "A Belgian non-profit IT organization that partners with public sector institutions to design and deliver secure, innovative, and scalable digital services for citizens and government agencies. Worked at the Belgian National Employment Office (ONEM) through Smals.\n\n- Contributed to mainframe system migration to Linux and modernization of legacy systems.  \n- Maintained and debugged a C++ shared library on Linux and supported a custom mainframe emulator.  \n- Developed web applications using Angular, Spring Boot, Docker, and Kubernetes to support government workflows.  \n- Automated deployments using Atlassian Bamboo, improving release speed and reliability.  \n- Worked within agile teams, using Jira for sprint planning and Bitbucket for source control.  \n- Implemented testing strategies with Cypress, Cucumber, Jest, and JUnit to ensure code quality and coverage."
+    "list": [
+      "Acted as a technical bridge between mainframe developers, a migration vendor, and the Java team during COBOL/ALGOL modernization, investigating migration discrepancies and coordinating migration activities.",
+      "Created Docker-based reproducible build environments to compile and validate migrated applications consistently; the images were a build and compilation validation mechanism, not a claimed production runtime.",
+      "Built and modernized public-sector applications with Angular and Spring Boot, Bamboo CI/CD, OpenShift-targeted deployments, and Cypress, Cucumber, Jest, and JUnit testing."
+    ]
   },
   {
+    "title": "Software Engineer Intern",
     "name": "Software Engineer Intern",
-    "start": "2020-02-01",
-    "end": "2020-05-01",
+    "start": "2020",
+    "end": "2020",
     "type": "Internship",
     "company": {
-      "name": "Avanade",
-      "website": "https://www.avanade.com",
-      "location": "Merelbeke, Flanders, Belgium",
-      "logo": {
-        "src": "/images/experience/avanade.avif",
-        "alt": "Avanade Logo",
-        "width": 128,
-        "height": 128
-      }
+      "name": "Avanade"
     },
-    "description": "A global leader in digital and cloud services, founded by Accenture and Microsoft to help organizations accelerate innovation through the Microsoft ecosystem.\n\n- Designed and developed a cloud-native proof-of-concept application using React, TypeScript, Azure Functions (.NET), Azure Storage Tables, and Azure Key Vault.  \n- Created Azure DevOps web extensions to support agile teams with mood tracking and reporting tools.  \n- Implemented automated DevOps workflows for builds and deployments within the Azure ecosystem.  \n- Applied clean code and security best practices with focus on scalability and maintainability.  \n- Delivered technical demos to both technical and non-technical stakeholders."
+    "confirmationStatus": "Needs confirmation",
+    "confirmationNeeded": [
+      "Exact start and end dates",
+      "Project scope, technologies, and responsibilities",
+      "Outcomes and stakeholder-facing claims"
+    ],
+    "list": []
   },
   {
+    "title": "Software Engineer Intern",
     "name": "Software Engineer Intern",
-    "start": "2019-08-01",
-    "end": "2019-11-01",
+    "start": "2019",
+    "end": "2019",
     "type": "Internship",
     "company": {
-      "name": "Microsoft Innovation Center",
-      "website": "https://www.microsoftinnovationcenters.com",
-      "location": "Brussels, Brussels-Capital Region, Belgium",
-      "logo": {
-        "src": "/images/experience/microsoft.avif",
-        "alt": "Microsoft Logo",
-        "width": 128,
-        "height": 128
-      }
+      "name": "Microsoft Innovation Center"
     },
-    "description": "A specialized prototyping internship program bridging innovation and industry experience through partnerships with leading technology companies.\n\n- Selected for competitive prototyping internship program after rigorous selection sessions.  \n- Worked on Avanade-sponsored project while receiving training and mentorship at Microsoft.  \n- Received training on Scrum, Python, Node.js, Angular, React, Big Data, and IoT.  \n- Developed technical and soft skills through expert-led workshops and mentorship sessions.  \n- Adapted to remote collaboration during coronavirus outbreak, maintaining productivity through online supervision.  \n- Contributed to innovation projects supporting startups and entrepreneurs in the local tech ecosystem."
+    "confirmationStatus": "Needs confirmation",
+    "confirmationNeeded": [
+      "Exact start and end dates",
+      "Program scope and relationship to the Avanade internship",
+      "Technologies, responsibilities, and outcomes"
+    ],
+    "list": []
   }
 ]
