@@ -25,6 +25,8 @@ const required = [
     "Languages",
     "Azure Developer Associate",
     "Professional Scrum Developer I",
+    "Azure Fundamentals",
+    "GitHub Foundations",
     "2020",
     "2022",
     "2025",
