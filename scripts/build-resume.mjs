@@ -39,8 +39,7 @@ const required = [
     "Professional Scrum Developer I",
     "GitHub Actions",
     "GitHub Copilot",
-    "Azure Fundamentals",
-    "GitHub Foundations",
+    "GitHub Copilot: Deploying and Scaling AI in the Enterprise Delivery Credential",
 ];
 const missing = required.filter((title) => !byTitle[title]);
 if (missing.length) throw new Error(`Missing canonical certifications: ${missing.join(", ")}`);
@@ -67,23 +66,17 @@ const facts = [
     command("CertificationGithubCopilotDate", byTitle["GitHub Copilot"].date.slice(0, 4)),
     command("CertificationGithubCopilotUrl", byTitle["GitHub Copilot"].url),
     command(
-        "CertificationGithubCopilotCore",
-        byTitle["GitHub Copilot: Core Skills & Application Delivery Credential"].title,
+        "CertificationGithubCopilotScaling",
+        byTitle["GitHub Copilot: Deploying and Scaling AI in the Enterprise Delivery Credential"].title,
     ),
     command(
-        "CertificationGithubCopilotCoreDate",
-        byTitle["GitHub Copilot: Core Skills & Application Delivery Credential"].date.slice(0, 4),
+        "CertificationGithubCopilotScalingDate",
+        byTitle["GitHub Copilot: Deploying and Scaling AI in the Enterprise Delivery Credential"].date.slice(0, 4),
     ),
     command(
-        "CertificationGithubCopilotCoreUrl",
-        byTitle["GitHub Copilot: Core Skills & Application Delivery Credential"].url,
+        "CertificationGithubCopilotScalingUrl",
+        byTitle["GitHub Copilot: Deploying and Scaling AI in the Enterprise Delivery Credential"].url,
     ),
-    command("CertificationFundamentals", byTitle["Azure Fundamentals"].title),
-    command("CertificationFundamentalsDate", byTitle["Azure Fundamentals"].date.slice(0, 4)),
-    command("CertificationFundamentalsUrl", byTitle["Azure Fundamentals"].url),
-    command("CertificationGithubFoundations", byTitle["GitHub Foundations"].title),
-    command("CertificationGithubFoundationsDate", byTitle["GitHub Foundations"].date.slice(0, 4)),
-    command("CertificationGithubFoundationsUrl", byTitle["GitHub Foundations"].url),
     "",
 ].join("\n");
 cpSync(join(root, "resume.tex"), join(output, "resume.tex"));
