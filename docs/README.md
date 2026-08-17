@@ -17,7 +17,9 @@ When generating resume content:
 - Distinguish technologies genuinely used from technologies only studied or explored.
 - Preserve the distinction between official corporate grade and functional role.
 - Tailored resumes may change emphasis and wording, but facts must come from these notes.
-- Approximate metrics may be used when defensible, but must not be made artificially precise.
+- Preserve documented uncertainty and approximation. Use quantitative evidence
+  only when it exists in these notes or another verified source; never create,
+  infer, extrapolate, or conservatively estimate a metric for resume use.
 
 ## Navigation
 
@@ -29,39 +31,7 @@ When generating resume content:
 
 ## Structured Data
 
-The Markdown notes above are the current authority. The structured records in
-`data/` are useful resume inputs but may need a later reconciliation; that
-work is deliberately out of scope for this organization change.
-
-## Repository Recommendation
-
-The resume should live in a central private repository.
-
-Suggested structure:
-
-```text
-resume/
-├── README.md
-│
-├── context/
-│   ├── career-context.md
-│   ├── projects.md
-│   ├── certifications.md
-│   └── facts.md
-│
-├── src/
-│   ├── resume.tex
-│   ├── sections/
-│   └── styles/
-│
-├── variants/
-│   ├── master/
-│   ├── cloud-devops/
-│   ├── software-engineering/
-│   └── github-ai/
-│
-├── output/
-│   └── resume.pdf
-│
-└── .github/
-    └── workflows/
+The Markdown notes above are authoritative. The structured records in `data/`
+support the build and must remain consistent with these notes. If they
+disagree, flag the inconsistency for the later reconciliation task rather than
+silently resolving it in favor of `data/`.
