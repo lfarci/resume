@@ -43,7 +43,7 @@ His practical AI experience is primarily around:
 - agentic development workflows
 - AI-assisted software delivery
 - GitHub Models
-- limited Azure AI Foundry exposure
+- limited Microsoft Foundry exposure (earlier notes use Azure AI Foundry)
 - experimenting with how software engineering changes when agents implement an increasing proportion of the code
 
 Preferred positioning direction:
@@ -169,11 +169,12 @@ That distinction does not prevent listing it as a skill.
 
 ---
 
-## Azure AI Foundry
+## Microsoft Foundry
 
 Logan has genuine exposure but is **not currently an expert**.
 
-He used Azure AI Foundry during the 2026 internship project and had to understand it well enough to:
+The 2026 internship project used Microsoft Foundry (recorded in earlier notes
+as Azure AI Foundry). Logan had to understand it well enough to:
 
 - coach interns
 - discuss architecture
@@ -182,7 +183,8 @@ He used Azure AI Foundry during the 2026 internship project and had to understan
 
 He wants to deepen this knowledge further.
 
-It may remain on the resume, but should have lower prominence than:
+It may remain on the resume as **Microsoft Foundry**, but should have lower
+prominence than:
 
 - Azure
 - Terraform

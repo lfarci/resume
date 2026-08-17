@@ -63,7 +63,7 @@
     "name": "Contextual / Limited Experience",
     "description": "Relevant experience that should remain secondary to core cloud, DevOps, GitHub, and software-engineering skills.",
     "skills": [
-      { "name": "Azure AI Foundry", "iconId": "azure-ai-foundry", "context": "Limited exposure" },
+      { "name": "Microsoft Foundry", "iconId": "azure-ai-foundry", "context": "Limited exposure; earlier notes use Azure AI Foundry" },
       { "name": "MongoDB", "iconId": "mongodb", "context": "Where applicable" }
     ]
   }
