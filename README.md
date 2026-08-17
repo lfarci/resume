@@ -8,7 +8,9 @@ curated presentation.
 
 - `resume.tex` defines the page, typography, colors, header, and portrait.
 - `sections/` contains the resume content.
-- `data/` contains employment, education, certification, and skills records.
+- `data/` contains structured employment, education, certification, and skills records; it may require later reconciliation with the canonical Markdown notes.
+- `docs/` contains the current career and resume source of truth, organized as focused, navigable notes.
+- `.agents/skills/` contains repository-local Codex workflows for resume analysis, tailoring, writing, formatting, and ATS review.
 - `fonts/` and `images/` contain the embedded visual assets.
 - `scripts/` builds and validates the generated PDF.
 
