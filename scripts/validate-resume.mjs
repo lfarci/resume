@@ -15,6 +15,18 @@ if (Math.abs(pageWidth - 595.276) > 1 || Math.abs(pageHeight - 841.89) > 1)
     throw new Error(
         `PDF validation failed; expected A4 (595.276 x 841.89 pts), received ${pageSize?.[0] ?? "an unknown page size"}`,
     );
+execFileSync("qpdf", ["--check", pdf], { encoding: "utf8" });
+const fontsInfo = execFileSync("pdffonts", [pdf], { encoding: "utf8" });
+const fontRows = fontsInfo
+    .split("\n")
+    .slice(2)
+    .map((line) => line.trim())
+    .filter(Boolean);
+if (fontRows.length === 0) throw new Error("PDF validation failed; no fonts detected");
+// Columns: name type encoding emb sub uni object ID (last two tokens are the object ID pair).
+const notEmbedded = fontRows.filter((row) => row.split(/\s+/).at(-5) !== "yes");
+if (notEmbedded.length)
+    throw new Error(`PDF validation failed; fonts not embedded: ${notEmbedded.join("; ")}`);
 const text = execFileSync("pdftotext", ["-layout", pdf, "-"], { encoding: "utf8" });
 const required = [
     "Summary",
