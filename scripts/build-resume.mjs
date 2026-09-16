@@ -40,8 +40,6 @@ const required = [
     "GitHub Actions",
     "GitHub Copilot",
     "GitHub Agentic AI Developer",
-    "Azure Fundamentals",
-    "GitHub Foundations",
 ];
 const missing = required.filter((title) => !byTitle[title]);
 if (missing.length) throw new Error(`Missing canonical certifications: ${missing.join(", ")}`);
@@ -85,12 +83,6 @@ const facts = [
         "CertificationGithubCopilotCoreUrl",
         byTitle["GitHub Copilot: Core Skills & Application Delivery Credential"].url,
     ),
-    command("CertificationFundamentals", byTitle["Azure Fundamentals"].title),
-    command("CertificationFundamentalsDate", byTitle["Azure Fundamentals"].date.slice(0, 4)),
-    command("CertificationFundamentalsUrl", byTitle["Azure Fundamentals"].url),
-    command("CertificationGithubFoundations", byTitle["GitHub Foundations"].title),
-    command("CertificationGithubFoundationsDate", byTitle["GitHub Foundations"].date.slice(0, 4)),
-    command("CertificationGithubFoundationsUrl", byTitle["GitHub Foundations"].url),
     "",
 ].join("\n");
 cpSync(join(root, "resume.tex"), join(output, "resume.tex"));
