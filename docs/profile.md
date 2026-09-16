@@ -299,7 +299,7 @@ Obtained in 2024.
 
 GitHub certification.
 
-Obtained in 2026.
+Obtained September 2026.
 
 ### GitHub Actions
 
