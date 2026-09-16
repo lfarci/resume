@@ -39,6 +39,7 @@ const required = [
     "Professional Scrum Developer I",
     "GitHub Actions",
     "GitHub Copilot",
+    "GitHub Certified: Agentic AI Developer",
     "Azure Fundamentals",
     "GitHub Foundations",
 ];
@@ -66,6 +67,11 @@ const facts = [
     command("CertificationGithubCopilot", byTitle["GitHub Copilot"].title),
     command("CertificationGithubCopilotDate", byTitle["GitHub Copilot"].date.slice(0, 4)),
     command("CertificationGithubCopilotUrl", byTitle["GitHub Copilot"].url),
+    command("CertificationGithubCertifiedAgentic", byTitle["GitHub Certified: Agentic AI Developer"].title),
+    command(
+        "CertificationGithubCertifiedAgenticDate",
+        byTitle["GitHub Certified: Agentic AI Developer"].date.slice(0, 4),
+    ),
     command(
         "CertificationGithubCopilotCore",
         byTitle["GitHub Copilot: Core Skills & Application Delivery Credential"].title,

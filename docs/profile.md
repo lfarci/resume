@@ -295,6 +295,12 @@ GitHub certification.
 
 Obtained in 2024.
 
+### GitHub Certified: Agentic AI Developer
+
+GitHub certification.
+
+Obtained in 2026.
+
 ### GitHub Actions
 
 GitHub certification.
@@ -344,7 +350,7 @@ Do not prioritize.
 In 2026 Logan completed three additional GitHub Partner Portal delivery credentials:
 
 - **GitHub Copilot: Core Skills & Application Delivery Credential** — issued July 23, 2026; expires July 23, 2027
-- **GitHub Copilot: Deploying and Scaling AI in the Enterprise Delivery Credential** — issued August 13, 2026; expires August 13, 2027
+- **GitHub Certified: Agentic AI Developer** — issued September 16, 2026
 - **Modernizing Enterprise CI/CD with GitHub Actions Delivery Credential** — issued August 13, 2026; expires August 13, 2027
 
 The official names and dates above were verified against Logan's public Credly profile.
