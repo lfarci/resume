@@ -295,7 +295,7 @@ GitHub certification.
 
 Obtained in 2024.
 
-### GitHub Certified: Agentic AI Developer
+### GitHub Agentic AI Developer
 
 GitHub certification.
 

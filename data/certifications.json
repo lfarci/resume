@@ -71,11 +71,12 @@
     "order": 4
   },
   {
-    "title": "GitHub Certified: Agentic AI Developer",
+    "title": "GitHub Agentic AI Developer",
     "issuer": "GitHub",
     "date": "2026-09-16",
     "expires": "2027-09-16",
     "status": "Active",
+    "url": "https://resources.github.com/learn/certifications/",
     "relevance": "High",
     "order": 5
   },
