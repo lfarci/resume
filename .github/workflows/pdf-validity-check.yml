@@ -10,6 +10,7 @@ on:
             - "resume.tex"
             - "scripts/build-resume.mjs"
             - "scripts/validate-resume.mjs"
+            - ".github/actions/build-resume/**"
             - ".github/workflows/pdf-validity-check.yml"
 
 jobs:
@@ -42,7 +43,7 @@ jobs:
                   tectonic-version: "0.15.0"
 
             - name: Build resume
-              run: node scripts/build-resume.mjs --output build/resume
+              uses: ./.github/actions/build-resume
 
             - name: Check PDF structural validity
               run: qpdf --check build/resume/resume.pdf

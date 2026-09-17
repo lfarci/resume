@@ -10,6 +10,7 @@ on:
             - "resume.tex"
             - "scripts/build-resume.mjs"
             - "scripts/validate-resume.mjs"
+            - ".github/actions/build-resume/**"
             - ".github/workflows/build-resume.yml"
     pull_request:
         paths:
@@ -20,6 +21,7 @@ on:
             - "resume.tex"
             - "scripts/build-resume.mjs"
             - "scripts/validate-resume.mjs"
+            - ".github/actions/build-resume/**"
             - ".github/workflows/build-resume.yml"
 
 jobs:
@@ -52,7 +54,7 @@ jobs:
                   tectonic-version: "0.15.0"
 
             - name: Build and validate resume
-              run: node scripts/build-resume.mjs --output build/resume
+              uses: ./.github/actions/build-resume
 
             - name: Upload resume artifact
               uses: actions/upload-artifact@v6

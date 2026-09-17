@@ -1,0 +1,13 @@
+name: Build resume
+description: Build and validate the resume PDF
+inputs:
+    output:
+        description: Generated output directory, relative to the repository root
+        required: false
+        default: build/resume
+runs:
+    using: composite
+    steps:
+        - name: Build and validate resume
+          shell: bash
+          run: node scripts/build-resume.mjs --output "${{ inputs.output }}"
