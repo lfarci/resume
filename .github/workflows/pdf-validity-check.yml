@@ -1,4 +1,4 @@
-name: PDF Validity Check
+name: Check PDF Structural Validity
 
 on:
     pull_request:
