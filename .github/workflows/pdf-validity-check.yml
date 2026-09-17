@@ -13,7 +13,8 @@ on:
             - ".github/workflows/pdf-validity-check.yml"
 
 jobs:
-    check:
+    structural-validity:
+        name: Check PDF structural validity
         runs-on: ubuntu-latest
         permissions:
             contents: read
@@ -26,6 +27,18 @@ jobs:
 
             - name: Check PDF structural validity
               run: qpdf --check build/resume/resume.pdf
+
+    embedded-fonts:
+        name: Check fonts are embedded
+        runs-on: ubuntu-latest
+        permissions:
+            contents: read
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v6
+
+            - name: Build resume
+              uses: ./.github/actions/build-resume
 
             - name: Check fonts are embedded
               run: |
