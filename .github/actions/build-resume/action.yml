@@ -29,7 +29,7 @@ runs:
           run: sudo apt-get update && sudo apt-get install --no-install-recommends -y poppler-utils qpdf
 
         - name: Install Tectonic
-          uses: wtfjoke/setup-tectonic@v3
+          uses: wtfjoke/setup-tectonic@v4
           with:
               tectonic-version: "0.15.0"
 
