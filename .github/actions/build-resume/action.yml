@@ -5,6 +5,10 @@ inputs:
         description: Generated output directory, relative to the repository root
         required: false
         default: build/resume
+    root:
+        description: Repository root containing the resume sources
+        required: false
+        default: ${{ github.workspace }}
 runs:
     using: composite
     steps:
@@ -31,4 +35,4 @@ runs:
 
         - name: Build and validate resume
           shell: bash
-          run: node .github/actions/build-resume/build-resume.mjs --output "${{ inputs.output }}"
+          run: node .github/actions/build-resume/build-resume.mjs --root "${{ inputs.root }}" --output "${{ inputs.output }}"

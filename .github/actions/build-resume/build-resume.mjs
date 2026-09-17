@@ -3,7 +3,10 @@ import { execFileSync } from "node:child_process";
 import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { isAbsolute, relative, resolve, join } from "node:path";
 
-const root = resolve(import.meta.dirname, "../../..");
+const rootIndex = process.argv.indexOf("--root");
+const rootArg = rootIndex === -1 ? process.cwd() : process.argv[rootIndex + 1];
+if (!rootArg) throw new Error("--root requires a path");
+const root = resolve(rootArg);
 const generatedRoot = join(root, "build");
 const data = join(root, "data");
 const outputIndex = process.argv.indexOf("--output");
