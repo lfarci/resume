@@ -31,4 +31,4 @@ runs:
 
         - name: Build and validate resume
           shell: bash
-          run: node scripts/build-resume.mjs --output "${{ inputs.output }}"
+          run: node .github/actions/build-resume/build-resume.mjs --output "${{ inputs.output }}"

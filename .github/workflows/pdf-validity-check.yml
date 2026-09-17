@@ -8,7 +8,6 @@ on:
             - "images/**"
             - "sections/**"
             - "resume.tex"
-            - "scripts/build-resume.mjs"
             - "scripts/validate-resume.mjs"
             - ".github/actions/build-resume/**"
             - ".github/workflows/pdf-validity-check.yml"

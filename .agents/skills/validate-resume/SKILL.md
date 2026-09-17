@@ -50,7 +50,7 @@ After the factual audit passes, check the following acceptance criteria:
 Run:
 
 ```bash
-node scripts/build-resume.mjs --output build/resume
+node .github/actions/build-resume/build-resume.mjs --output build/resume
 ```
 
 The build validates the A4 page, selectable text, required content, and

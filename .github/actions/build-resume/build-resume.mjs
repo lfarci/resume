@@ -3,7 +3,7 @@ import { execFileSync } from "node:child_process";
 import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { isAbsolute, relative, resolve, join } from "node:path";
 
-const root = resolve(import.meta.dirname, "..");
+const root = resolve(import.meta.dirname, "../../..");
 const generatedRoot = join(root, "build");
 const data = join(root, "data");
 const outputIndex = process.argv.indexOf("--output");
