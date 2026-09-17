@@ -1,0 +1,38 @@
+name: Build resume
+description: Build and validate the resume PDF
+inputs:
+    output:
+        description: Generated output directory, relative to the repository root
+        required: false
+        default: build/resume
+    root:
+        description: Repository root containing the resume sources
+        required: false
+        default: ${{ github.workspace }}
+runs:
+    using: composite
+    steps:
+        - name: Set up Node.js
+          uses: actions/setup-node@v6
+          with:
+              node-version: "node"
+
+        - name: Cache Tectonic bundle
+          uses: actions/cache@v5
+          with:
+              path: ~/.cache/Tectonic
+              key: tectonic-${{ runner.os }}-${{ hashFiles('resume.tex') }}
+              restore-keys: tectonic-${{ runner.os }}
+
+        - name: Install PDF tools
+          shell: bash
+          run: sudo apt-get update && sudo apt-get install --no-install-recommends -y poppler-utils qpdf
+
+        - name: Install Tectonic
+          uses: wtfjoke/setup-tectonic@v4
+          with:
+              tectonic-version: "0.15.0"
+
+        - name: Build and validate resume
+          shell: bash
+          run: node .github/actions/build-resume/build-resume.mjs --root "${{ inputs.root }}" --output "${{ inputs.output }}"

@@ -16,7 +16,8 @@ The repository hierarchy is: `docs/` (canonical context) → `data/`
 - `data/` contains structured employment, education, certification, and skills records selected from verified facts; it may require later reconciliation with `docs/`.
 - `.agents/skills/` contains repository-local Codex workflows for resume analysis, tailoring, writing, formatting, and ATS review.
 - `fonts/` and `images/` contain the embedded visual assets.
-- `scripts/` builds and validates the generated PDF.
+- `.github/actions/build-resume/` contains the reusable build action and its
+  Node.js build script.
 
 ## CI build
 
@@ -51,7 +52,7 @@ pdftoppm -v
 From the repository root, run:
 
 ```bash
-node scripts/build-resume.mjs --output build/resume
+node .github/actions/build-resume/build-resume.mjs --output build/resume
 ```
 
 The command creates:

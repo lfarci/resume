@@ -1,0 +1,56 @@
+name: Check PDF Structural Validity
+run-name: Check PDF Structural Validity for PR #${{ github.event.pull_request.number }}
+
+on:
+    pull_request:
+        paths:
+            - "data/**"
+            - "fonts/**"
+            - "images/**"
+            - "sections/**"
+            - "resume.tex"
+            - "scripts/validate-resume.mjs"
+            - ".github/actions/build-resume/**"
+            - ".github/workflows/pdf-validity-check.yml"
+
+jobs:
+    structural-validity:
+        name: Check PDF structural validity
+        runs-on: ubuntu-latest
+        permissions:
+            contents: read
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v6
+
+            - name: Build resume
+              uses: ./.github/actions/build-resume
+
+            - name: Check PDF structural validity
+              run: qpdf --check build/resume/resume.pdf
+
+    embedded-fonts:
+        name: Check fonts are embedded
+        runs-on: ubuntu-latest
+        permissions:
+            contents: read
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v6
+
+            - name: Build resume
+              uses: ./.github/actions/build-resume
+
+            - name: Check fonts are embedded
+              run: |
+                  output="$(pdffonts build/resume/resume.pdf)"
+                  echo "$output"
+                  if [ -z "$(echo "$output" | tail -n +3)" ]; then
+                      echo "::error::No fonts detected in resume.pdf"
+                      exit 1
+                  fi
+                  if echo "$output" | tail -n +3 | awk '{ if ($(NF-4) != "yes") print }' | grep -q .; then
+                      echo "::error::One or more fonts are not embedded in resume.pdf"
+                      echo "$output" | tail -n +3 | awk '{ if ($(NF-4) != "yes") print }'
+                      exit 1
+                  fi

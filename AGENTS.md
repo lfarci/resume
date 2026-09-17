@@ -37,4 +37,4 @@ wins. Apply their useful workflows subject to these higher-priority rules:
 - Tailor by selecting, reordering, and concisely rewriting supported evidence.
   Do not change the meaning of that evidence.
 
-Use `node scripts/build-resume.mjs --output build/resume` to generate and validate the PDF. Generated output under `build/` must not be committed.
+Use `node .github/actions/build-resume/build-resume.mjs --output build/resume` to generate and validate the PDF. Generated output under `build/` must not be committed.
