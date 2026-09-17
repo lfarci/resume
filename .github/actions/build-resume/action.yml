@@ -22,7 +22,7 @@ runs:
           with:
               path: ~/.cache/Tectonic
               key: tectonic-${{ runner.os }}-${{ hashFiles('resume.tex') }}
-              restore-keys: tectonic-${{ runner.os }}-
+              restore-keys: tectonic-${{ runner.os }}
 
         - name: Install PDF tools
           shell: bash
