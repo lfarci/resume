@@ -6,7 +6,7 @@
 
 **Core identity:** A hands-on software engineer who designs, builds, tests, deploys, and maintains reliable cloud-native software, combining software architecture and the full SDLC with cloud engineering, Developer Experience (DevEx), and practical AI-assisted development.
 
-**Preferred public-facing line:** Software Engineer | .NET, Cloud-Native Systems, DevEx & Applied AI.
+**Preferred generic résumé headline:** Software & Cloud Engineer | Azure, GitHub & AI-Enabled Development. This can coexist with a shorter Software Engineer identity on the website and GitHub.
 
 - Keep software engineering, C#/.NET, design patterns, architecture, testing and maintainability central.
 - Azure infrastructure, Terraform and GitHub Actions are established professional delivery skills. Deeper networking and cloud architecture are active learning priorities, not claims of expertise.
@@ -62,11 +62,11 @@ His practical AI experience is primarily around:
 
 Preferred positioning direction:
 
-> **Software Engineer | .NET, Cloud-Native Systems, DevEx & Applied AI**
+> **Software & Cloud Engineer | Azure, GitHub & AI-Enabled Development**
 
 Alternative:
 
-> **Software Engineer | .NET, Azure, GitHub Actions & AI-Assisted Development**
+> **Software & Cloud Engineer | .NET, Azure & GitHub Actions**
 
 Avoid presenting the generic profile simply as:
 
