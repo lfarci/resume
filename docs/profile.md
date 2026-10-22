@@ -2,6 +2,20 @@
 
 ## Professional Positioning
 
+### Career north star (October 2026)
+
+**Core identity:** A hands-on software engineer who designs, builds, tests, deploys, and maintains reliable cloud-native software, combining software architecture and the full SDLC with cloud engineering, Developer Experience (DevEx), and practical AI-assisted development.
+
+**Preferred generic résumé headline:** Software & Cloud Engineer | Azure, GitHub & AI-Enabled Development. This can coexist with a shorter Software Engineer identity on the website and GitHub.
+
+- Keep software engineering, C#/.NET, design patterns, architecture, testing and maintainability central.
+- Azure infrastructure, Terraform and GitHub Actions are established professional delivery skills. Deeper networking and cloud architecture are active learning priorities, not claims of expertise.
+- Applied AI currently emphasizes developer workflows, GitHub Copilot, coding agents, practical experiments, and mentoring. Do not imply proven production-scale ML/AI model engineering.
+- Keep the job title truthful: **Consultant** is the Avanade grade and **DevOps Engineer** the current function. Consultant is senior-equivalent internally; public headline **Software Engineer** avoids confusing a career aspiration with an official title.
+- Grow as a hands-on individual contributor and technical leader, with limited people management for now.
+
+**Cross-channel messaging:** Website and GitHub profile should present this same core story. LinkedIn should use the same professional headline and substantiate current/past roles; this résumé must continue to favor verified achievements and relevant, concise evidence.
+
 Logan is primarily a **Software and Cloud Engineer** with strong experience in:
 
 - Azure
@@ -39,7 +53,8 @@ His practical AI experience is primarily around:
 - custom instructions
 - custom agents
 - GitHub Copilot CLI
-- coding agents
+- coding agents: GitHub Copilot, Claude Code, OpenAI Codex, and OpenCode
+- MCP integrations and reusable Agent Skills for coding-agent workflows
 - agentic development workflows
 - AI-assisted software delivery
 - GitHub Models
@@ -52,7 +67,7 @@ Preferred positioning direction:
 
 Alternative:
 
-> **Software & Cloud Engineer | Azure, GitHub Actions & GitHub Copilot**
+> **Software & Cloud Engineer | .NET, Azure & GitHub Actions**
 
 Avoid presenting the generic profile simply as:
 
