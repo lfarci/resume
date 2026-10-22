@@ -53,7 +53,8 @@ His practical AI experience is primarily around:
 - custom instructions
 - custom agents
 - GitHub Copilot CLI
-- coding agents
+- coding agents: GitHub Copilot, Claude Code, OpenAI Codex, and OpenCode
+- MCP integrations and reusable Agent Skills for coding-agent workflows
 - agentic development workflows
 - AI-assisted software delivery
 - GitHub Models
