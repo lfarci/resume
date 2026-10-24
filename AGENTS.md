@@ -42,3 +42,22 @@ Use `node .github/actions/build-resume/build-resume.mjs --output build/resume` t
 ## Private-source boundary
 
 This repository is public; `lfarci/notes` is private. Authorized agents may consult private notes for factual verification, but must never copy full private notes, confidential client details, unreviewed excerpts, private file contents, or credentials into this repository, prompts shared publicly, logs, CI artifacts, PR descriptions, or the generated PDF. Do not add CI access, tokens, automated checkout, or synchronization of private notes. Publish only explicitly selected and reviewed career facts. If the private source is unavailable, flag the claim as unverified rather than fetching or reconstructing it through unsafe means.
+
+## Publication handoff
+
+After a factual change, review the generated PDF and preview from the PR's
+`resume-pdf` artifact before merging. The website's `/resume.pdf` is a separate
+publication surface: confirm which resume revision its workflow consumes, then
+compare the hosted PDF's extracted text, dates and verification links with the
+approved artifact. A successful resume build does not establish that the hosted
+PDF has been updated. Website publication requires a separate approved action.
+
+For employment chronology, distinguish Avanade grade dates from assignment
+dates: the current DevOps engagement began in late 2023 and continued across
+the December 2025 promotion to Consultant. Describe that engagement once,
+rather than counting it as two projects.
+
+Credential names, issue dates and validity must be checked against their official
+public verification pages before changing `data/certifications.json`. If evidence
+cannot be accessed, retain the existing record and document the unverified fields
+in the review instead of inferring a renewal or expiration date.
