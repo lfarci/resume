@@ -36,7 +36,7 @@ const yearRange = (start, end) => `${start.slice(0, 4)}--${end ? end.slice(0, 4)
 const experiences = read("experiences.json");
 const education = read("education.json");
 const certifications = read("certifications.json");
-const byTitle = Object.fromEntries(certifications.map((item) => [item.title, item]));
+const byTitle = Object.fromEntries(certifications.map((item) => [item.displayName ?? item.title, item]));
 const required = [
     "Azure Developer Associate",
     "Professional Scrum Developer I",
@@ -56,7 +56,7 @@ const facts = [
     command("EducationName", education.name),
     command("EducationUniversity", education.University),
     command("EducationDates", education.details[1].replace(/\s*–\s*/, "--")),
-    command("CertificationAzureDeveloper", byTitle["Azure Developer Associate"].title),
+    command("CertificationAzureDeveloper", byTitle["Azure Developer Associate"].displayName),
     command("CertificationAzureDate", byTitle["Azure Developer Associate"].date.slice(0, 4)),
     command("CertificationAzureUrl", byTitle["Azure Developer Associate"].url),
     command("CertificationScrum", byTitle["Professional Scrum Developer I"].title),
@@ -68,7 +68,7 @@ const facts = [
     command("CertificationGithubCopilot", byTitle["GitHub Copilot"].title),
     command("CertificationGithubCopilotDate", byTitle["GitHub Copilot"].date.slice(0, 4)),
     command("CertificationGithubCopilotUrl", byTitle["GitHub Copilot"].url),
-    command("CertificationGithubAgentic", byTitle["GitHub Agentic AI Developer"].title),
+    command("CertificationGithubAgentic", byTitle["GitHub Agentic AI Developer"].displayName),
     command(
         "CertificationGithubAgenticDate",
         byTitle["GitHub Agentic AI Developer"].date.slice(0, 4),

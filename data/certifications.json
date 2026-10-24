@@ -1,9 +1,10 @@
 [
   {
-    "title": "Azure Developer Associate",
+    "title": "Microsoft Certified: Azure Developer Associate",
+    "displayName": "Azure Developer Associate",
     "issuer": "Microsoft",
     "date": "2025-03-28",
-    "expires": "2027-03",
+    "expires": "2027-03-28",
     "status": "Active",
     "url": "https://learn.microsoft.com/api/credentials/share/en-us/avanade-logan-farci/982302979423E055?sharingId=C15D4BAF8E2D5DFD",
     "relevance": "High",
@@ -71,7 +72,8 @@
     "order": 4
   },
   {
-    "title": "GitHub Agentic AI Developer",
+    "title": "GitHub Certified: Agentic AI Developer",
+    "displayName": "GitHub Agentic AI Developer",
     "issuer": "GitHub",
     "date": "2026-09-07",
     "expires": "2027-09-07",
