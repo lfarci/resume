@@ -5,7 +5,7 @@ description: Tailor this repository's LaTeX resume to a job using only supported
 
 # Tailor the Resume
 
-Use after `analyze-job` when adapting the resume to a specific role. `docs/`
+Use after `analyze-job` when adapting the resume to a specific role. `lfarci/notes/career/`
 is canonical; `data/` is supporting build input only. `AGENTS.md` overrides
 this skill.
 
