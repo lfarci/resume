@@ -79,3 +79,7 @@ A consumer workflow can download the named artifact with `actions/download-artif
 
 The personal website can consume this artifact without duplicating the resume
 source or build toolchain.
+
+## Privacy boundary
+
+This repository is **public**, while `lfarci/notes` is **private**. The notes are for authorized, local factual review only. Never commit, vendor, download into tracked files, upload as CI artifacts, or publish private notes or their unreviewed excerpts. The public resume must contain only deliberately selected and reviewed career facts. CI must build exclusively from this repository's checked-in public inputs; it must not receive a token or checkout permission for the private notes repository.
