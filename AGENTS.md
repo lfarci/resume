@@ -51,6 +51,9 @@ publication surface: confirm which resume revision its workflow consumes, then
 compare the hosted PDF's extracted text, dates and verification links with the
 approved artifact. A successful resume build does not establish that the hosted
 PDF has been updated. Website publication requires a separate approved action.
+The `update-website-resume.yml` workflow proposes that handoff as a website draft
+PR using the latest validated default-branch build; see README.md for setup and
+review requirements. It must never auto-merge or deploy.
 
 For employment chronology, distinguish Avanade grade dates from assignment
 dates: the current DevOps engagement began in late 2023 and continued across

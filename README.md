@@ -68,17 +68,36 @@ missing, install the corresponding prerequisite above and open a new terminal
 before retrying. The generated `build/` directory is reproducible output and
 must not be committed.
 
-A consumer workflow can download the named artifact with `actions/download-artifact`:
+## Website PDF update PR
 
-```yaml
-- uses: actions/download-artifact@v6
-  with:
-      name: resume-pdf
-      path: public
-```
+`.github/workflows/update-website-resume.yml` runs after a successful
+**Build Resume** push build on the default branch (`master` today). It can also
+be run manually from Actions once merged, to pick up the latest existing build.
+It downloads that run's validated `resume-pdf` artifact and replaces only
+`src/public/resume.pdf` in `lfarci/loganfarci.com`. It opens or updates one draft
+PR on `automation/update-resume`, with source commit and artifact links.
+No PDF difference means no new PR. It never merges or deploys changes.
 
-The personal website can consume this artifact without duplicating the resume
-source or build toolchain.
+One-time setup: create a fine-grained GitHub token restricted to
+`lfarci/loganfarci.com`, with **Contents: Read and write** and
+**Pull requests: Read and write**. Store it as the Actions secret
+`WEBSITE_RESUME_TOKEN` in **this resume repository**. The normal `GITHUB_TOKEN`
+only reads this repository and its build artifacts; it cannot write to the website.
+No private-notes access or workflow-write permission is needed. Missing or expired
+credentials cause an explicit failure; rotate the token when needed.
+
+Only default-branch push builds qualify; PR/fork builds never supply the PDF.
+The latest push build must have succeeded: an older PDF is not used if a newer
+build is queued, running, or failed. Older completion events are ignored. Runs
+are serialized to avoid concurrent branch updates. A missing/expired artifact
+fails without changing the website; rerun **Build Resume** on the default branch,
+then rerun this workflow if necessary. Artifacts currently expire after 30 days.
+
+Review the PDF and preview from the linked source build before approving the
+website PR. Generated commits contain `[skip ci]` because website PRs otherwise
+automatically deploy previews. This also skips website CI; run the approved checks
+before merging. Keep `[skip ci]` out of the final squash commit so the normal
+website production deployment runs. Verify the hosted `/resume.pdf` afterward.
 
 ## Privacy boundary
 
