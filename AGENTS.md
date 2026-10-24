@@ -38,3 +38,7 @@ wins. Apply their useful workflows subject to these higher-priority rules:
   Do not change the meaning of that evidence.
 
 Use `node .github/actions/build-resume/build-resume.mjs --output build/resume` to generate and validate the PDF. Generated output under `build/` must not be committed.
+
+## Private-source boundary
+
+This repository is public; `lfarci/notes` is private. Authorized agents may consult private notes for factual verification, but must never copy full private notes, confidential client details, unreviewed excerpts, private file contents, or credentials into this repository, prompts shared publicly, logs, CI artifacts, PR descriptions, or the generated PDF. Do not add CI access, tokens, automated checkout, or synchronization of private notes. Publish only explicitly selected and reviewed career facts. If the private source is unavailable, flag the claim as unverified rather than fetching or reconstructing it through unsafe means.
