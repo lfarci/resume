@@ -12,8 +12,8 @@ in it.
 
 ## Evidence rules
 
-`docs/` is the canonical career source of truth. Use `data/` only as a
-supporting structured record and flag disagreements with `docs/`. Do not add a
+`lfarci/notes/career/` is the canonical career source of truth. Use `data/` only as a
+supporting structured record and flag disagreements with `lfarci/notes/career/`. Do not add a
 technology, credential, responsibility, outcome, or metric unless supported by
 the canonical notes, another verified repository source, or the user.
 
