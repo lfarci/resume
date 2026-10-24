@@ -3,15 +3,15 @@
 This repository contains the curated LaTeX resume. Its source-of-truth
 hierarchy is:
 
-1. `docs/` — canonical factual and contextual career source of truth
+1. `lfarci/notes/career/` — canonical factual and contextual career source of truth
 2. `data/` — structured representation of selected verified facts
 3. `sections/` — curated resume wording derived from verified facts
 4. `resume.tex` — presentation and layout
 5. generated PDF — build artifact
 
-Canonical career context lives in `docs/`. Structured records in `data/`
+Canonical career context lives in the private GitHub repository https://github.com/lfarci/notes/tree/main/career/. Read the actual current notes before changing factual resume content; if access is unavailable, stop and request access rather than guessing. Structured records in `data/`
 support the build and must remain consistent with the Markdown source. If they
-disagree, treat `docs/` as authoritative and flag the inconsistency for the
+disagree, treat `lfarci/notes/career/` as authoritative and flag the inconsistency for the
 later reconciliation task; never silently resolve it in favor of `data/`.
 
 Repository-local resume skills live under `.agents/skills/`. They are
