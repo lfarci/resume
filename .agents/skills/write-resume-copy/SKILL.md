@@ -6,7 +6,7 @@ description: Draft or revise evidence-based resume summaries, bullets, and secti
 # Write Resume Copy
 
 Use for resume summaries, bullets, skills, certifications, and project copy.
-`docs/` is canonical and `AGENTS.md` is higher priority than this skill.
+`lfarci/notes/career/` is canonical and `AGENTS.md` is higher priority than this skill.
 
 ## Copy rules
 
