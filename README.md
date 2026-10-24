@@ -83,3 +83,22 @@ source or build toolchain.
 ## Privacy boundary
 
 This repository is **public**, while `lfarci/notes` is **private**. The notes are for authorized, local factual review only. Never commit, vendor, download into tracked files, upload as CI artifacts, or publish private notes or their unreviewed excerpts. The public resume must contain only deliberately selected and reviewed career facts. CI must build exclusively from this repository's checked-in public inputs; it must not receive a token or checkout permission for the private notes repository.
+
+## Publication handoff
+
+After a factual change, review the generated PDF and preview from the PR's
+`resume-pdf` artifact before merging. The website's `/resume.pdf` is a separate
+publication surface: confirm which resume revision its workflow consumes, then
+compare the hosted PDF's extracted text, dates and verification links with the
+approved artifact. A successful resume build does not establish that the hosted
+PDF has been updated. Website publication requires a separate approved action.
+
+For employment chronology, distinguish Avanade grade dates from assignment
+dates: the current DevOps engagement began in late 2023 and continued across
+the December 2025 promotion to Consultant. Describe that engagement once,
+rather than counting it as two projects.
+
+Credential names, issue dates and validity must be checked against their official
+public verification pages before changing `data/certifications.json`. If evidence
+cannot be accessed, retain the existing record and document the unverified fields
+in the review instead of inferring a renewal or expiration date.
