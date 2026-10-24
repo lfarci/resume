@@ -1,0 +1,118 @@
+name: Propose Website Resume Update
+
+on:
+    workflow_run:
+        workflows: [Build Resume]
+        types: [completed]
+    workflow_dispatch:
+
+permissions:
+    actions: read
+    contents: read
+
+concurrency:
+    group: website-resume-update
+    cancel-in-progress: false
+
+jobs:
+    propose:
+        if: >-
+            github.event_name == 'workflow_dispatch' ||
+            (github.event.workflow_run.conclusion == 'success' &&
+             github.event.workflow_run.event == 'push' &&
+             github.event.workflow_run.head_branch == github.event.repository.default_branch &&
+             github.event.workflow_run.head_repository.full_name == github.repository)
+        runs-on: ubuntu-latest
+        timeout-minutes: 10
+        steps:
+            - name: Check website credentials
+              env:
+                  WEBSITE_TOKEN: ${{ secrets.WEBSITE_RESUME_TOKEN }}
+              run: |
+                  if [ -z "$WEBSITE_TOKEN" ]; then
+                      echo "::error::Set WEBSITE_RESUME_TOKEN with Contents and Pull requests write access to lfarci/loganfarci.com. See README.md."
+                      exit 1
+                  fi
+
+            - name: Select latest successful default-branch build
+              id: source
+              uses: actions/github-script@v8
+              with:
+                  script: |
+                      const { data: repo } = await github.rest.repos.get(context.repo);
+                      const { data } = await github.rest.actions.listWorkflowRuns({
+                        ...context.repo, workflow_id: 'build-resume.yml',
+                        branch: repo.default_branch, event: 'push', per_page: 1
+                      });
+                      const run = data.workflow_runs[0];
+                      if (!run || run.status !== 'completed' || run.conclusion !== 'success') {
+                        core.setFailed('The latest default-branch push build must finish successfully. No older PDF will be proposed.');
+                        return;
+                      }
+                      if (context.eventName === 'workflow_run' && context.payload.workflow_run.id !== run.id) {
+                        core.notice('Ignoring an older build completion; a newer build exists.');
+                        return;
+                      }
+                      core.setOutput('run-id', String(run.id));
+                      core.setOutput('sha', run.head_sha);
+                      core.setOutput('url', run.html_url);
+
+            - name: Download validated resume artifact
+              if: steps.source.outputs.run-id
+              uses: actions/download-artifact@v6
+              with:
+                  github-token: ${{ github.token }}
+                  repository: ${{ github.repository }}
+                  run-id: ${{ steps.source.outputs.run-id }}
+                  name: resume-pdf
+                  path: resume-artifact
+
+            - name: Checkout website default branch
+              if: steps.source.outputs.run-id
+              uses: actions/checkout@v6
+              with:
+                  repository: lfarci/loganfarci.com
+                  token: ${{ secrets.WEBSITE_RESUME_TOKEN }}
+                  path: website
+
+            - name: Copy built PDF
+              if: steps.source.outputs.run-id
+              run: |
+                  test -s resume-artifact/resume.pdf
+                  test "$(head -c 5 resume-artifact/resume.pdf)" = '%PDF-'
+                  test -f website/src/public/resume.pdf
+                  cp resume-artifact/resume.pdf website/src/public/resume.pdf
+
+            - name: Open or update website draft PR
+              if: steps.source.outputs.run-id
+              id: pr
+              uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8
+              with:
+                  token: ${{ secrets.WEBSITE_RESUME_TOKEN }}
+                  path: website
+                  add-paths: src/public/resume.pdf
+                  branch: automation/update-resume
+                  commit-message: "chore(site): refresh resume PDF [skip ci]"
+                  title: "chore(site): refresh resume PDF"
+                  draft: always-true
+                  body: |
+                      Replace `/resume.pdf` with the validated PDF built from the resume repository's latest default-branch push build.
+
+                      Source commit: https://github.com/lfarci/resume/commit/${{ steps.source.outputs.sha }}
+                      Build and PDF/preview artifact: ${{ steps.source.outputs.url }}
+
+                      Review the PDF and `resume-preview.png` in that build's `resume-pdf` artifact before approval.
+                      Only `src/public/resume.pdf` changes. No LaTeX rebuild or private career-note access occurs here.
+
+                      The commit uses `[skip ci]` to avoid the website's automatic PR preview deployment.
+                      Website CI and preview checks therefore remain pending an approved run.
+                      Merge only after approval; omit `[skip ci]` from the squash commit to allow normal production deployment.
+
+            - name: Summarize proposal
+              if: steps.source.outputs.run-id
+              env:
+                  SOURCE_URL: ${{ steps.source.outputs.url }}
+                  PR_URL: ${{ steps.pr.outputs.pull-request-url }}
+              run: |
+                  echo "Source build: $SOURCE_URL" >> "$GITHUB_STEP_SUMMARY"
+                  echo "Website draft PR: ${PR_URL:-No PDF difference; no new PR needed.}" >> "$GITHUB_STEP_SUMMARY"
