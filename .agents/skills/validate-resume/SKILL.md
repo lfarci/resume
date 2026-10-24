@@ -11,8 +11,8 @@ resume rules.
 
 ## 1. Factual audit
 
-Before building, audit every resume claim against the canonical `docs/`
-source. `data/` supports the build but does not override `docs/`.
+Before building, audit every resume claim against the canonical `lfarci/notes/career/`
+source. `data/` supports the build but does not override `lfarci/notes/career/`.
 
 Explicitly verify:
 
@@ -25,7 +25,7 @@ Explicitly verify:
 - skill and exposure claims
 
 Flag every claim that is unsupported, stronger than the canonical notes, more
-precise than the canonical notes, or inconsistent with `docs/`. Ask for
+precise than the canonical notes, or inconsistent with `lfarci/notes/career/`. Ask for
 evidence or remove the claim; do not silently reconcile a disagreement in
 favour of `data/`.
 
