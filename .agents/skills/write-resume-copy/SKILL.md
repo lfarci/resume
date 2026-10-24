@@ -6,7 +6,7 @@ description: Draft or revise evidence-based resume summaries, bullets, and secti
 # Write Resume Copy
 
 Use for resume summaries, bullets, skills, certifications, and project copy.
-`docs/` is canonical and `AGENTS.md` is higher priority than this skill.
+`lfarci/notes/career/` is canonical and `AGENTS.md` is higher priority than this skill.
 
 ## Copy rules
 
@@ -24,3 +24,7 @@ Use for resume summaries, bullets, skills, certifications, and project copy.
 
 When revising copy, show the original and proposed wording, explain the
 evidence used, and identify any claim that needs clarification.
+
+## Private-source boundary
+
+This repository is public; `lfarci/notes` is private. Authorized agents may consult private notes for factual verification, but must never copy full private notes, confidential client details, unreviewed excerpts, private file contents, or credentials into this repository, prompts shared publicly, logs, CI artifacts, PR descriptions, or the generated PDF. Do not add CI access, tokens, automated checkout, or synchronization of private notes. Publish only explicitly selected and reviewed career facts. If the private source is unavailable, flag the claim as unverified rather than fetching or reconstructing it through unsafe means.

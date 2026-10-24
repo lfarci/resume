@@ -11,8 +11,8 @@ resume rules.
 
 ## 1. Factual audit
 
-Before building, audit every resume claim against the canonical `docs/`
-source. `data/` supports the build but does not override `docs/`.
+Before building, audit every resume claim against the canonical `lfarci/notes/career/`
+source. `data/` supports the build but does not override `lfarci/notes/career/`.
 
 Explicitly verify:
 
@@ -25,7 +25,7 @@ Explicitly verify:
 - skill and exposure claims
 
 Flag every claim that is unsupported, stronger than the canonical notes, more
-precise than the canonical notes, or inconsistent with `docs/`. Ask for
+precise than the canonical notes, or inconsistent with `lfarci/notes/career/`. Ask for
 evidence or remove the claim; do not silently reconcile a disagreement in
 favour of `data/`.
 
@@ -60,3 +60,7 @@ changes. Do not commit anything under `build/`.
 ATS-oriented review is qualitative: confirm real text, recognizable section
 headings, sensible reading order, and natural supported terminology. Do not
 present an ATS or keyword-match percentage as an objective result.
+
+## Private-source boundary
+
+This repository is public; `lfarci/notes` is private. Authorized agents may consult private notes for factual verification, but must never copy full private notes, confidential client details, unreviewed excerpts, private file contents, or credentials into this repository, prompts shared publicly, logs, CI artifacts, PR descriptions, or the generated PDF. Do not add CI access, tokens, automated checkout, or synchronization of private notes. Publish only explicitly selected and reviewed career facts. If the private source is unavailable, flag the claim as unverified rather than fetching or reconstructing it through unsafe means.

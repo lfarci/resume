@@ -1,10 +1,8 @@
 # Resume
 
-This repository contains an ATS-friendly, one-page LaTeX resume. Canonical
-career context lives in `docs/`. Structured records in `data/` support the
-build and must remain consistent with the Markdown source.
+This repository contains an ATS-friendly, one-page LaTeX resume. Canonical career context lives in the private [`lfarci/notes`](https://github.com/lfarci/notes) repository under `career/`. Structured records in `data/` support the build and must remain consistent with those notes.
 
-The repository hierarchy is: `docs/` (canonical context) → `data/`
+The source hierarchy is: `lfarci/notes/career/` (canonical context) → `data/`
 (structured verified facts) → `sections/` (curated wording) → `resume.tex`
 (presentation/layout) → generated PDF (build artifact).
 
@@ -12,8 +10,8 @@ The repository hierarchy is: `docs/` (canonical context) → `data/`
 
 - `resume.tex` defines the page, typography, colors, header, and portrait.
 - `sections/` contains the resume content.
-- `docs/` contains the canonical career and resume context, organized as focused, navigable notes.
-- `data/` contains structured employment, education, certification, and skills records selected from verified facts; it may require later reconciliation with `docs/`.
+- [`lfarci/notes/career/`](https://github.com/lfarci/notes/tree/main/career) contains the canonical career context and [resume-authoring guidance](https://github.com/lfarci/notes/blob/main/career/personal-brand/resume-authoring.md). Access to this private repository is required for factual editing.
+- `data/` contains structured employment, education, certification, and skills records selected from verified facts; reconcile them against `lfarci/notes/career/`.
 - `.agents/skills/` contains repository-local Codex workflows for resume analysis, tailoring, writing, formatting, and ATS review.
 - `fonts/` and `images/` contain the embedded visual assets.
 - `.github/actions/build-resume/` contains the reusable build action and its
@@ -81,3 +79,7 @@ A consumer workflow can download the named artifact with `actions/download-artif
 
 The personal website can consume this artifact without duplicating the resume
 source or build toolchain.
+
+## Privacy boundary
+
+This repository is **public**, while `lfarci/notes` is **private**. The notes are for authorized, local factual review only. Never commit, vendor, download into tracked files, upload as CI artifacts, or publish private notes or their unreviewed excerpts. The public resume must contain only deliberately selected and reviewed career facts. CI must build exclusively from this repository's checked-in public inputs; it must not receive a token or checkout permission for the private notes repository.
