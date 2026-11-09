@@ -10,7 +10,7 @@ The source hierarchy is: `lfarci/notes/career/` (canonical context) → `data/`
 
 - `resume.tex` defines the page, typography, colors, header, and portrait.
 - `sections/` contains the resume content.
-- [`lfarci/notes/career/`](https://github.com/lfarci/notes/tree/main/career) contains the canonical career context and [resume-authoring guidance](https://github.com/lfarci/notes/blob/main/career/personal-brand/resume-authoring.md). Access to this private repository is required for factual editing.
+- [`lfarci/notes/career/`](https://github.com/lfarci/notes/tree/main/career) contains the canonical career context and [resume-authoring guidance](https://github.com/lfarci/notes/blob/main/career/brand/resume-guidance.md). Access to this private repository is required for factual editing.
 - `data/` contains structured employment, education, certification, and skills records selected from verified facts; reconcile them against `lfarci/notes/career/`.
 - `.agents/skills/` contains repository-local Codex workflows for resume analysis, tailoring, writing, formatting, and ATS review.
 - `fonts/` and `images/` contain the embedded visual assets.

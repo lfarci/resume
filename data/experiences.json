@@ -20,7 +20,11 @@
       {
         "cohort": "2026 Avanade internship cohort",
         "interns": 4,
-        "responsibilities": ["Scrum Master", "Product Owner-type contributor", "Technical Mentor"]
+        "responsibilities": [
+          "Scrum Master",
+          "Product Owner-type contributor",
+          "Technical Mentor"
+        ]
       }
     ]
   },
@@ -28,7 +32,7 @@
     "title": "Senior Analyst",
     "role": "Full-Stack Developer",
     "name": "Senior Analyst | Full-Stack Developer",
-    "start": "2022-06-01",
+    "start": "2022-06-20",
     "end": "2025-12-01",
     "type": "Full-Time",
     "company": {
@@ -58,15 +62,18 @@
         "cohort": "2025 Avanade internship cohort",
         "interns": 3,
         "confirmedHires": 2,
-        "responsibilities": ["Scrum Master", "Technical Mentor"]
+        "responsibilities": [
+          "Scrum Master",
+          "Technical Mentor"
+        ]
       }
     ]
   },
   {
     "title": "Analyst Developer",
     "name": "Analyst Developer",
-    "start": "2020",
-    "end": "2022",
+    "start": "2020-11",
+    "end": "2022-05",
     "type": "Full-Time",
     "company": {
       "name": "Smals",
@@ -82,35 +89,17 @@
   {
     "title": "Software Engineer Intern",
     "name": "Software Engineer Intern",
-    "start": "2020",
-    "end": "2020",
+    "start": "2020-02",
+    "end": "2020-05",
     "type": "Internship",
     "company": {
-      "name": "Avanade"
+      "name": "Avanade",
+      "location": "Merelbeke, Flanders, Belgium"
     },
-    "confirmationStatus": "Needs confirmation",
-    "confirmationNeeded": [
-      "Exact start and end dates",
-      "Project scope, technologies, and responsibilities",
-      "Outcomes and stakeholder-facing claims"
-    ],
-    "list": []
-  },
-  {
-    "title": "Software Engineer Intern",
-    "name": "Software Engineer Intern",
-    "start": "2019",
-    "end": "2019",
-    "type": "Internship",
-    "company": {
-      "name": "Microsoft Innovation Center"
-    },
-    "confirmationStatus": "Needs confirmation",
-    "confirmationNeeded": [
-      "Exact start and end dates",
-      "Program scope and relationship to the Avanade internship",
-      "Technologies, responsibilities, and outcomes"
-    ],
-    "list": []
+    "program": "Microsoft Innovation Center Prototyping Internship Programme",
+    "list": [
+      "Developed Azure DevOps extensions supporting Scrum teams through daily sentiment tracking (Niko-Niko calendar) and reporting.",
+      "Built a React and TypeScript frontend and C#/.NET REST APIs on Azure Functions with Azure Table Storage and Azure Key Vault."
+    ]
   }
 ]

@@ -1,9 +1,13 @@
 {
-  "name": "Bachelor in Business IT",
+  "name": "Bachelor in Computer Science",
   "officialQualification": "Bachelier en informatique de gestion",
   "University": "École Supérieure d'Informatique (ÉSI)",
   "start": "2017",
   "end": "2020",
-  "details": ["", "2017 – 2020"],
-  "description": "Official French qualification: Bachelier en informatique de gestion."
+  "details": [
+    "",
+    "2017 – 2020"
+  ],
+  "description": "Official French qualification: Bachelier en informatique de gestion. Public English title: Bachelor in Computer Science. Obtained with distinction (exact grade wording not recorded).",
+  "honors": "With distinction"
 }
